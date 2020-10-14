@@ -118,28 +118,266 @@
        
            
 
+    var bar = new ProgressBar.Line(container, {
+    strokeWidth: 4,
+    easing: 'easeInOut',
+    duration: 2000,
+    color: '#E6DFD7',
+    color: '#DAD3CD',
+    trailColor: '#eee',
+    trailWidth: 1,
+    svgStyle: {width: '100%', height: '100%'},
+    text: {
+        style: {
+        // Text color.
+        // Default: same as stroke color (options.color)
+        color: '#999',
+        position: 'absolute',
+        right: '0',
+        top: '30px',
+        padding: 0,
+        margin: 0,
+        transform: null
+        },
+        autoStyleContainer: false
+    },
+    from: {color: '#FFEA82'},
+    to: {color: '#ED6A5A'},
+    step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+    }
+    });
+
+    bar.animate(0.9);  // Number from 0.0 to 1.0
+
+    var bar2 = new ProgressBar.Line(container2, {
+    strokeWidth: 4,
+    easing: 'easeInOut',
+    duration: 2000,
+    color: '#DAD3CD',
+    trailColor: '#eee',
+    trailWidth: 1,
+    svgStyle: {width: '100%', height: '100%'},
+    text: {
+        style: {
+        // Text color.
+        // Default: same as stroke color (options.color)
+        color: '#999',
+        position: 'absolute',
+        right: '0',
+        top: '30px',
+        padding: 0,
+        margin: 0,
+        transform: null
+        },
+        autoStyleContainer: false
+    },
+    from: {color: '#FFEA82'},
+    to: {color: '#ED6A5A'},
+    step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+    }
+    });
+
+    bar2.animate(0.9);
 
 
-/*
-$('.sectionskills').visible();
+    var bar3 = new ProgressBar.Line(container3, {
+    strokeWidth: 4,
+    easing: 'easeInOut',
+    duration: 2000,
+    color: '#cbb0a9',color: '#DAD3CD',
+    trailColor: '#eee',
+    trailWidth: 1,
+    svgStyle: {width: '100%', height: '100%'},
+    text: {
+        style: {
+        // Text color.
+        // Default: same as stroke color (options.color)
+        color: '#999',
+        position: 'absolute',
+        right: '0',
+        top: '30px',
+        padding: 0,
+        margin: 0,
+        transform: null
+        },
+        autoStyleContainer: false
+    },
+    from: {color: '#FFEA82'},
+    to: {color: '#ED6A5A'},
+    step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+    }
+    });
 
-setTimeout(function(){
-                       location.reload(); 
-                    },1000);
+    bar3.animate(0.6);
+
+    var bar4 = new ProgressBar.Line(container4, {
+    strokeWidth: 4,
+    easing: 'easeInOut',
+    duration: 2000,
+    color: '#C4C9CD',
+    color: '#DAD3CD',
+    trailColor: '#eee',
+    trailWidth: 1,
+    svgStyle: {width: '100%', height: '100%'},
+    text: {
+        style: {
+        // Text color.
+        // Default: same as stroke color (options.color)
+        color: '#999',
+        position: 'absolute',
+        right: '0',
+        top: '30px',
+        padding: 0,
+        margin: 0,
+        transform: null
+        },
+        autoStyleContainer: false
+    },
+    from: {color: '#FFEA82'},
+    to: {color: '#ED6A5A'},
+    step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+    }
+    });
+
+    bar4.animate(0.7);
 
 
 
+    var bar5 = new ProgressBar.Line(container5, {
+    strokeWidth: 4,
+    easing: 'easeInOut',
+    duration: 2000,
+    color: '#8D9BA4',
+    color: '#DAD3CD',
+    trailColor: '#eee',
+    trailWidth: 1,
+    svgStyle: {width: '100%', height: '100%'},
+    text: {
+        style: {
+        // Text color.
+        // Default: same as stroke color (options.color)
+        color: '#999',
+        position: 'absolute',
+        right: '0',
+        top: '30px',
+        padding: 0,
+        margin: 0,
+        transform: null
+        },
+        autoStyleContainer: false
+    },
+    from: {color: '#FFEA82'},
+    to: {color: '#ED6A5A'},
+    step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+    }
+    });
 
-========================  meter
-$(".meter > span").each(function() { 
-             $(this)
-                   .data("origWidth", $(this).width())
-                   .width(0)
-                   .animate({
-                   width: $(this).data("origWidth") // or + "%" if fluid
-                   }, 1200);
-               });
-*/
+    bar5.animate(0.9);
+
+
+    var bar6 = new ProgressBar.Line(container6, {
+    strokeWidth: 4,
+    easing: 'easeInOut',
+    duration: 2000,
+    color: '#424953',
+    color: '#DAD3CD',
+    trailColor: '#eee',
+    trailWidth: 1,
+    svgStyle: {width: '100%', height: '100%'},
+    text: {
+        style: {
+        // Text color.
+        // Default: same as stroke color (options.color)
+        color: '#999',
+        position: 'absolute',
+        right: '0',
+        top: '30px',
+        padding: 0,
+        margin: 0,
+        transform: null
+        },
+        autoStyleContainer: false
+    },
+    from: {color: '#FFEA82'},
+    to: {color: '#ED6A5A'},
+    step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+    }
+    });
+
+    bar6.animate(0.7);
+
+
+    var bar7 = new ProgressBar.Line(container7, {
+    strokeWidth: 4,
+    easing: 'easeInOut',
+    duration: 2000,
+    color: '#FFEA82',
+    color: '#DAD3CD',
+    trailColor: '#eee',
+    trailWidth: 1,
+    svgStyle: {width: '100%', height: '100%'},
+    text: {
+        style: {
+        // Text color.
+        // Default: same as stroke color (options.color)
+        color: '#999',
+        position: 'absolute',
+        right: '0',
+        top: '30px',
+        padding: 0,
+        margin: 0,
+        transform: null
+        },
+        autoStyleContainer: false
+    },
+    from: {color: '#FFEA82'},
+    to: {color: '#ED6A5A'},
+    step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+    }
+    });
+
+    bar7.animate(0.6);
+
+    
+    var bar8 = new ProgressBar.Line(container8, {
+    strokeWidth: 4,
+    easing: 'easeInOut',
+    duration: 2000,
+    color: '#FFEA82',
+    color: '#DAD3CD',
+    trailColor: '#eee',
+    trailWidth: 1,
+    svgStyle: {width: '100%', height: '100%'},
+    text: {
+        style: {
+        // Text color.
+        // Default: same as stroke color (options.color)
+        color: '#999',
+        position: 'absolute',
+        right: '0',
+        top: '30px',
+        padding: 0,
+        margin: 0,
+        transform: null
+        },
+        autoStyleContainer: false
+    },
+    from: {color: '#FFEA82'},
+    to: {color: '#ED6A5A'},
+    step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+    }
+    });
+
+    bar8.animate(0.8);
+
 
                
 

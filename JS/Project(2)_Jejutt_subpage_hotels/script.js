@@ -61,6 +61,26 @@ $(function(){
         // 첫째장의 앞에 대기중이던 마지막 사진이 0으로 오면서 화면에 보인다. 
     }
 
+    $(function(){
+        $(".signIn").hide();
+        
+        
+        
+        $(".in").click(function(){
+        
+           var result=$(".signIn").is(":visible");     
+        
+                if(result==true){
+                    $(".signIn").hide(230, "linear");
+                    }else{
+                    $(".signIn").show(230, "linear");    
+                    }
+            
+                });
+        
+        
+        });
+
 });
 
 
