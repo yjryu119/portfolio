@@ -10,437 +10,9 @@
 
 <script src="JS/Project(2)_Jejutt_index/script.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/Project(2)_Jejutt_index/style.css">
 </head>
 
-<style>
-
-    *{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        text-decoration: none;
-        /* font-family: aaa; */
-        font-family: 'Noto Sans KR';
-        color: #EEA703;
-        /* background-color: blanchedalmond; */
-     
-    }
-
-    .wrap{
-        background-color: rgb(224, 221, 215);
-
-    }
-
-
-    header{
-        width: 100%;
-        height: 490px;
-        /* height: 100vh; */
-        background-image: url("IMG/Jejutt/jocean3.jpg");
-        background-size: 100vw 525px ;
-        background-position: top center;
-        background-repeat: no-repeat;
-    }
-
-    .logo{
-        width: 300px;
-        margin: 0 auto;
-        /* border: 1px solid red; */
-        text-align: center;
-        padding-top: 75px;
-        padding-bottom: 40px;
-    }
-
-    .search{
-        float: left;
-    }
-
-
-    .search input{
-        background-color: transparent;
-        border: 1.5px solid #EEA703;
-        border-radius: 10px;
-        position: relative;
-        top: -2px;
-        width: 165px;
-        height: 17px;
-    }
-
-    .search img{
-        margin: 0 10px;
-    }
-
-    .mainmenu{
-        position: relative;
-        /* padding-top: 25px; */
-        width: 960px;
-        height: 50px;
-        margin: 0 auto;
-        /* border: 1px solid red; */
-    }
-
-    .mainmenu ul{
-        float: left;
-        height: 50px;
-        width: 100%;
-        /* border: 1px solid red; */
-        text-align: center;
-    }
-
-    .mainmenu ul li{
-        float: left;
-        padding: 0 19px;
-        /* border: 1px solid red; */
-    }
-
-
-    .signIn{
-        width: 250px;
-        height: 220px;
-        background-color: white;
-        border-radius: 10px;
-        font-size: 12px;
-        color: rgb(27, 27, 27);
-        position: absolute;
-        right: 20px;
-        top: 30px;
-        
-    }
-
-    .signIn input{
-        border: none;
-        border-bottom: 1px solid gray;
-    }
-
-    .signIn input:first-child{
-        margin-top: 20px;
-        margin-bottom: 5px;
-    }
-
-
-    .signIn input:last-child{
-        margin-bottom: 20px;
-    }
-
-    
-
-    .signIn a{
-        color: rgb(27, 27, 27);
-        
-    }
-
-
-    .signIn h2{
-        color: rgb(27, 27, 27);
-        margin-top: 20px;
-    }
-
-    .SB{
-        width: 190px;
-        background-color: #EEA703;
-        margin-bottom: 10px;
-    }
-
-    article{
-     
-        width: 920px;
-        height: 890px;
-        margin: 0 auto;
-        /* border: 1px solid red; */
-    }
-
-    .res{
-        width: 920px;
-        /* background-color: rgba(255, 255, 255, 0.7); */
-        background-color: #ffffff81;
-        height: 185px;
-        margin: 0 auto;
-        margin-top: 55px;
-        /* margin-top: 500px; */
-        color: rgb(58, 32, 32);
-        border-radius: 4px;
-        /* border: 2px solid white; */
-        
-    }
-
-    .whitesq{
-        width: 880px;
-        margin: 0 auto;
-        /* border: 1px solid red; */
-        color: rgb(27, 27, 27);
-        
-    }
-
-    .res input{
-        color: rgb(27, 27, 27);
-        width: 240px;
-        background-color: transparent;
-        border: none;
-        border-bottom: 1px solid rgb(129, 129, 129);
-        /* border-radius: 10px; */
-
-        margin-top: 30px;
-    }
-
-    .res select {
-        color: rgb(27, 27, 27);
-        background-color: transparent;
-        border: none;
-        border-bottom: 1px solid rgb(122, 122, 122);
-        
-        /* border-radius: 10px; */
-        margin: 2.8px;
-
-        
-    }
-
-    .res option{
-        color: rgb(27, 27, 27);
-        background-color: transparent;
-    }
-
-
-    .res h4, .whitesq p{
-        /* color: whitesmoke; */
-        color: rgb(63, 63, 63);
-        font-weight: 600;
-        text-align: center;
-        padding-top: 20px;
-        
-    }
-
-
-    button{
-        color: whitesmoke;
-        /* font-weight: 700; */
-        width: 870px;
-        height: 25px;
-        margin: 0 auto;
-        text-align: center;
-        padding: 3px;
-        background-color: #7BB1B3 ;
-        /* background-color: #eea703d7; */
-        border: none;
-        /* border: 1px solid rgb(122, 122, 122); */
-        border-radius: 5px;
-        display: block;
-        margin-top: 30px;
-        
-
-    }
-
-    .left{
-        float: left;
-        width: 290px;
-        height: 900px;
-        /* border: 1px solid red; */
-    }
-
-    .pics{
-        position: relative;
-        /* border: 1px solid red; */
-    }
-
-
-    .cont h2{
-        font-weight: 200;
-        color: white;
-        margin-bottom: 10px;
-        
-    }
-    
-    .cont p{
-        font-size: 13px;
-        color: white;
-        margin-bottom: 20px;
-        
-        
-      
-
-    }
-
-    .cont{
-        margin: 60px 0 0 20px;
-        position: relative;
-        z-index: 999;
-    }
-
-
-    .one{
-        width: 290px;
-        height: 420px;
-        float: left;
-        background-image: url("IMG/Jejutt/jeju/original.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top center;
-        margin: 10px 10px 10px 0;
-        position: relative;
-    
-    }
-
-    .two{
-        width: 530px;
-        height: 440px;
-        float: left;
-        background-image: url("IMG/Jejutt/jeju/drives.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0 10px 0px 0;
-
-    }
-
-    .hov{
-        opacity: 2;
-        background-color: rgba(48, 36, 21, 0.534);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 1;
-
-    }
-
-    .pics:hover .hov{
-        opacity: 0;
-      
-    }
-
-    .middle{
-        width: 230px ;
-        height: 900px;
-        float: left;
-        margin-left: 10px;
-    }
-
-    .three{
-        height: 420px;
-        width: 230px ;
-        float: left;
-        background-image: url("IMG/Jejutt/jeju/5a3xbwwlupx11.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top left;
-        margin: 10px 10px 10px 0;
-        position: relative;
-
-    }
-
-    .four{
-        height: 381px;
-        width: 230px ;
-        float: left;
-        background-image: url("IMG/Jejutt/golfff.png");
-        background-repeat: no-repeat;
-        margin: 0px 10px 0px 0;
-        position: relative;
-
-    }
-
-
-
-
-    .right{
-        width: 375px;
-        height: 900px;
-        float: left;
-        margin-left: 10px;
-         
-    }
-
-    .five{
-        height: 365px;
-        width: 378px ;
-        float: left;
-        background-image: url("IMG/Jejutt/indoor.png");
-        background-repeat: no-repeat;
-        margin: 10px 10px 0px 0;
-        position: relative;
-
-    }
-
-
-    .six{
-        height: 495px;
-        width: 378px ;
-        float: left;
-        background-image: url("IMG/Jejutt/jeju/food1.jpg");
-        background-size: 100%;
-        background-position: top ;
-        background-repeat: no-repeat;
-        margin: 10px 10px 0px 0;
-        position: relative;
-
-    }
-
-
-
-
-
-    footer{
-        background-image: url(IMG/Jejutt/jeju/john-banks-7qj4qVae4Wg-unsplash.jpg);
-        background-position: bottom ;
-        background-size: 70% 750px;
-        background-size: 100% 720%;
-        background-size: 50%;
-
-        margin: 0 auto;
-    }
-
-    footer{
-
-        background-image: url(IMG/Jejutt/ssss.jpg);
-        background-position: bottom center;
-        background-size: 100% 800px;
-        margin: 0 auto;
-
-    }
-
-
-    
-
-
-    footer p{
-        /* margin-top: 20px; */
-        color: white;
-        /* font-weight: bold; */
-        font-size: 12px;
-        
-        
-    }
-
-    .footer{
-        width: 920px;
-        margin: 0 auto;
-        padding-top: 20px;
-        
-    }
-
-    footer .sns{
-        float: right;
-    }
-
-    footer .sns img{
-        padding-left: 20px;
-
-    }
-
-    .footer .text{
-        padding-top: 30px;
-    }
-
-    .footer span{
-        display: block;
-        text-align: right;
-        padding-top: 20px;
-        color: white;
-        font-size: 12px;
-        padding-bottom: 10px;
-    }
-
-
-</style>
 
 <body>
 
@@ -479,15 +51,15 @@
                                 <h2>LOG IN</h2>
 
                                 <br>
-                                <input type="text" placeholder="아이디">
-                                <input type="text" placeholder="비밀번호">
+                                <input type="text" placeholder="Email">
+                                <input type="text" placeholder="Password">
                                 <button class="SB">
-                                    로그인
+                                    Sign in
                                 </button>
 
-                                <a href="#">ID/비밀번호 찾기</a>
+                                <a class="membership" href="Project(2)_Jejutt_subpage_sign_up.html">BECOME A MEMBER</a>
                                 <br>
-                                <a href="Project(2)_Jejutt_subpage_sign_up.html">회원가입</a>
+                                <a href="#">Forgot your password?</a>
                         </div>
                    </ul>
 
@@ -579,7 +151,7 @@
                     
                     
                     <div class="one pics">
-                        <a href="#"><div class="hov"></div></a>
+                        <a href="Project(2)_Jejutt_subpage_hotels.html"><div class="hov"></div></a>
 
                         <div class="cont">
                             <h2>베스트 코스 둘러보기</h2>
@@ -590,7 +162,7 @@
                     </div>
 
                   <div class="two pics">
-                        <a href=""><div class="hov"></div></a>
+                        <a href="Project(2)_Jejutt_subpage_hotels.html"><div class="hov"></div></a>
 
                         <div class="cont">
                             <h2>렌터카 둘러보기</h2>
@@ -605,7 +177,7 @@
             <section class="middle">
 
                     <div class="three pics">
-                        <a href=""><div class="hov"></div></a>
+                        <a href="Project(2)_Jejutt_subpage_hotels.html"><div class="hov"></div></a>
 
                         <div class="cont">
                             <h2>항공권 둘러보기</h2>
@@ -633,7 +205,7 @@
                         <a href="Project(2)_Jejutt_subpage_hotels.html"><div class="hov"></div></a>
 
                         <div class="cont">
-                            <h2>베스트 숙소 둘러보기</h2>
+                            <h2>Recommended Hotels</h2>
                             <p>스파리조트 부터 오션뷰 호텔까지, <br> ~12/31까지 예약가능
                             </p>
                         </div>
@@ -641,7 +213,7 @@
                     </div>
 
                     <div class="six pics">
-                        <a href=""><div class="hov"></div></a>
+                        <a href="Project(2)_Jejutt_subpage_hotels.html"><div class="hov"></div></a>
 
                         <div class="cont">
                             <h2>맛집 코스 둘러보기</h2>
