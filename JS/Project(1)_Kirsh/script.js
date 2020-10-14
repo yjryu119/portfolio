@@ -69,7 +69,7 @@ $(function(){
 
 
 
-                    $(".nav li a:not(:eq(num))").text("•");
+                    $(".nav li a:not(:eq(num))").text("⦁");
                     $("a", ".nav li:eq("+ind+")").text(num); 
                      
             });
